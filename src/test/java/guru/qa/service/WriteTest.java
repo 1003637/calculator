@@ -15,9 +15,9 @@ public class WriteTest {
         MockWrite mockWrite = new MockWrite();
         calculator = new Calculator(mockPowerReader, mockWrite);
         String result = calculator.start();
-        Assertions.assertEquals(mockWrite.print(Texts.ENTER2DIGITS.getText()),"Введите два числа: ");
-        Assertions.assertEquals(mockWrite.print(Texts.ENTER2OPERATORS.getText()),"Введите оператор (+, *, -, /, ^): ");
-        Assertions.assertEquals(mockWrite.print(Texts.RESULT.getText()) + result,"\nРезультат:\n" + "2 ^ 3 = 8");
+        Assertions.assertEquals(mockWrite.print(Texts.ENTER2DIGITS.getText()), "Введите два числа: ");
+        Assertions.assertEquals(mockWrite.print(Texts.ENTER2OPERATORS.getText()), "Введите оператор (+, *, -, /, ^): ");
+        Assertions.assertEquals(mockWrite.print(Texts.RESULT.getText()) + result, "\nРезультат:\n" + "2 ^ 3 = 8");
 
     }
 }

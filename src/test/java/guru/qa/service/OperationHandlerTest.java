@@ -30,13 +30,13 @@ class OperationHandlerTest {
 
     @Test
     void divideTest() {
-        handler  = new DivideOperationHandler(); // 16, 4, /
+        handler = new DivideOperationHandler(); // 16, 4, /
         Assertions.assertEquals(4, handler.invoke(16, 4));
     }
 
     @Test
     void powTest() {
-        handler  = new PowerOperationHandler(); // 2, 3, ^
+        handler = new PowerOperationHandler(); // 2, 3, ^
         Assertions.assertEquals(8, handler.invoke(2, 3));
     }
 }
