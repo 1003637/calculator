@@ -9,9 +9,9 @@ public enum Texts {
 
     Texts(String text) {
         this.text = text;
-    };
+    }
 
-    String getText(){
+    String getText() {
         return text;
     }
 }
